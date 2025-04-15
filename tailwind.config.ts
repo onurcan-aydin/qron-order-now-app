@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				qron: {
+					primary: '#FF6B35', /* Vibrant Orange */
+					secondary: '#F7C59F', /* Light Orange */
+					accent: '#1D3557', /* Navy Blue */
+					light: '#F5F5F5', /* Off-white */
+					dark: '#2B2D42', /* Dark Blue-Gray */
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
