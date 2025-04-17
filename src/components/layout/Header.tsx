@@ -21,6 +21,7 @@ export default function Header() {
             src={LogoImage} 
             alt="QRON Logo" 
             className="h-10 w-auto" 
+            style={{ maxWidth: '200px', maxHeight: '50px' }} // Added explicit size limits
           />
         </Link>
 
