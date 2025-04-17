@@ -20,8 +20,8 @@ export default function Header() {
           <img 
             src={LogoImage} 
             alt="QRON Logo" 
-            className="h-16 w-auto" // Increased height from h-10 to h-16
-            style={{ maxWidth: '250px', maxHeight: '80px' }} // Increased max dimensions
+            className="h-16 w-auto" 
+            style={{ maxWidth: '250px', maxHeight: '80px' }} 
           />
         </Link>
 
