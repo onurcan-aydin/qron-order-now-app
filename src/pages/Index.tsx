@@ -1,15 +1,12 @@
-
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import { QrCode, Utensils, CreditCard, Star } from "lucide-react";
-import LogoImage from "@/assets/qron-logo.png";
 
 export default function Index() {
   const { t } = useLanguage();
 
-  // Update color palette to match logo's blue theme
   const features = [
     {
       icon: <QrCode className="h-12 w-12 text-blue-600" />,
@@ -40,16 +37,9 @@ export default function Index() {
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <div className="flex items-center mb-4">
-                <img 
-                  src={LogoImage} 
-                  alt="QRON Logo" 
-                  className="h-16 w-auto mr-4" 
-                />
-                <h1 className="text-4xl md:text-5xl font-bold leading-tight text-blue-900">
-                  QR Code <br />Ordering System
-                </h1>
-              </div>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight text-blue-900">
+                QR Code <br />Ordering System
+              </h1>
               <p className="text-xl mb-6 text-gray-600 max-w-lg">
                 Enhance your dining experience with our innovative QR code ordering and payment solution. 
                 No app downloads required!
