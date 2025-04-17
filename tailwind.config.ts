@@ -53,11 +53,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				qron: {
-					primary: '#FF6B35', /* Vibrant Orange */
-					secondary: '#F7C59F', /* Light Orange */
-					accent: '#1D3557', /* Navy Blue */
-					light: '#F5F5F5', /* Off-white */
-					dark: '#2B2D42', /* Dark Blue-Gray */
+					primary: '#2C7BE5',   // A vibrant, professional blue
+					secondary: '#A7C7E7', // A softer, complementary blue
+					accent: '#1A4A7A',    // A deep, rich blue
+					light: '#EBF2FA',     // A very light blue for backgrounds
+					dark: '#0D47A1',      // A dark, authoritative blue
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

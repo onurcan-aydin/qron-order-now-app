@@ -4,13 +4,15 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import { QrCode, Utensils, CreditCard, Star } from "lucide-react";
+import LogoImage from "@/assets/qron-logo.png";
 
 export default function Index() {
   const { t } = useLanguage();
 
+  // Update color palette to match logo's blue theme
   const features = [
     {
-      icon: <QrCode className="h-12 w-12 text-qron-primary" />,
+      icon: <QrCode className="h-12 w-12 text-blue-600" />,
       title: "QR Code Menu Access",
       description: "Scan a QR code to access the digital menu optimized for mobile devices."
     },
@@ -38,9 +40,16 @@ export default function Index() {
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                <span className="text-qron-primary">QRON</span> - QR Code <br />Ordering System
-              </h1>
+              <div className="flex items-center mb-4">
+                <img 
+                  src={LogoImage} 
+                  alt="QRON Logo" 
+                  className="h-16 w-auto mr-4" 
+                />
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight text-blue-900">
+                  QR Code <br />Ordering System
+                </h1>
+              </div>
               <p className="text-xl mb-6 text-gray-600 max-w-lg">
                 Enhance your dining experience with our innovative QR code ordering and payment solution. 
                 No app downloads required!
@@ -74,17 +83,17 @@ export default function Index() {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-blue-50">
         <div className="container px-4 mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={index} 
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-2 border-blue-100"
               >
                 <div className="mb-4 flex justify-center">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-center">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-center text-blue-800">{feature.title}</h3>
                 <p className="text-gray-600 text-center">{feature.description}</p>
               </div>
             ))}

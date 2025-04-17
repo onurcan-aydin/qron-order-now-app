@@ -6,6 +6,7 @@ import { ShoppingCart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import LogoImage from "@/assets/qron-logo.png";
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
@@ -16,7 +17,11 @@ export default function Header() {
     <header className="sticky top-0 bg-white border-b z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-bold text-2xl text-qron-primary">QRON</span>
+          <img 
+            src={LogoImage} 
+            alt="QRON Logo" 
+            className="h-10 w-auto" 
+          />
         </Link>
 
         {/* Mobile menu button */}
